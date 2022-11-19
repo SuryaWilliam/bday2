@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="relative flex items-center justify-center h-screen overflow-hidden hidden"
+      class="relative flex items-center justify-center h-screen overflow-hidden"
     >
       <video autoplay loop muted playsinline class="fixed z-10 w-full">
         <source src="/bg.mp4" type="video/mp4" />
@@ -16,7 +16,7 @@
         <source src="/bgm.mp4" type="video/mp4" />
       </video>
     </header>
-    <div class="bg-white">
+    <div class="bg-white hidden">
       <p id="myBirthday"></p>
       <div id="test"></div>
     </div>
@@ -28,7 +28,7 @@ export default {
   name: "home",
 };
 
-var countDownDate = new Date("Nov 20, 2022 03:39:00").getTime();
+var countDownDate = new Date("Nov 28, 2022 03:39:00").getTime();
 
 var ameibday = setInterval(function () {
   var now = new Date().getTime();
