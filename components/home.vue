@@ -28,7 +28,7 @@ export default {
   name: "home",
 };
 
-var countDownDate = new Date("Nov 20, 2022 03:40:00").getTime();
+var countDownDate = new Date("Nov 20, 2022 03:39:00").getTime();
 
 var ameibday = setInterval(function () {
   var now = new Date().getTime();
