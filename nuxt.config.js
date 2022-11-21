@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bday2',
+    title: 'HAPPY BIRTHDAY AMEI',
     htmlAttrs: {
       lang: 'en'
     },
