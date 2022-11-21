@@ -9,9 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@liripeng/vue-audio-player": "^1.5.0",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
     "vue": "^2.7.10",
+    "vue-plyr": "^7.0.0",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },

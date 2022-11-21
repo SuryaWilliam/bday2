@@ -9,7 +9,7 @@
           loop
           muted
           playsinline
-          class="fixed w-full hidden min-[500px]:flex"
+          class="fixed w-full hidden min-[500px]:hidden"
           id="bgc"
         >
           <source src="/bgc.mp4" type="video/mp4" />
@@ -53,6 +53,19 @@
       class="fixed flex justify-center items-center text-[#ffffc6] text-4xl lg:text-8xl z-50 left-1/2 top-1/2 lg:top-[510px] -translate-x-1/2 -translate-y-1/2"
     ></div>
     <div class="" id="test"></div>
+
+    <div
+      class="fixed text-[#ffffc6] z-50 left-1/2 -translate-x-1/2 bottom-[5%] flex justify-center items-center cursor-pointer md:hidden"
+      id="playb"
+    >
+      <div class="mx-2 text-2xl font-bold">SONG</div>
+      <audio
+        controls
+        controlslist="nodownload noplaybackrate"
+        src="/bgs.mp3"
+        class="w-[100px] mx-2"
+      ></audio>
+    </div>
   </div>
 </template>
 
@@ -97,6 +110,56 @@ var ameibday = setInterval(function () {
 </script>
 
 <style>
+audio::-webkit-media-controls-panel {
+  background: rgba(255, 255, 198, 0.5);
+}
+audio::-webkit-media-controls-mute-button {
+  display: none;
+}
+audio::-webkit-media-controls-play-button {
+  display: flex !important;
+  justify-content: center !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+audio::-webkit-media-controls-timeline-container {
+  display: none;
+}
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+audio::-webkit-media-controls-timeline {
+  display: none;
+}
+audio::-webkit-media-controls-volume-slider-container {
+  display: none;
+}
+audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+audio::-webkit-media-controls-seek-back-button {
+  display: none;
+}
+audio::-webkit-media-controls-seek-forward-button {
+  display: none;
+}
+audio::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+audio::-webkit-media-controls-rewind-button {
+  display: none;
+}
+audio::-webkit-media-controls-return-to-realtime-button {
+  display: none;
+}
+audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
 #myb {
   text-shadow: 0 0 1px rgba(255, 210, 108, 1), 0 0 5px rgba(255, 210, 108, 1),
     0 0 10px rgba(255, 210, 108, 1), 0 0 15px rgba(0, 0, 0, 1),
