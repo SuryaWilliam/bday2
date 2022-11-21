@@ -1,56 +1,57 @@
 <template>
   <div class="bg-black">
     <div
-      id="bg"
       class="relative flex items-center justify-center h-screen overflow-hidden"
     >
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="fixed z-10 w-full max-w-[500px]:hidden"
-      >
-        <source src="/bg.mp4" type="video/mp4" />
-      </video>
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="fixed z-10 w-full min-[500px]:hidden"
-      >
-        <source src="/bgm.mp4" type="video/mp4" />
-      </video>
+      <template>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="fixed w-full hidden min-[500px]:flex"
+          id="bgc"
+        >
+          <source src="/bgc.mp4" type="video/mp4" />
+        </video>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="fixed w-full min-[500px]:hidden"
+          id="bgcm"
+        >
+          <source src="/bgcm.mp4" type="video/mp4" />
+        </video>
+      </template>
+      <template>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="fixed w-full max-w-[500px]:hidden"
+          id="bg"
+        >
+          <source src="/bg.mp4" type="video/mp4" />
+        </video>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="fixed w-full min-[500px]:hidden"
+          id="bgm"
+        >
+          <source src="/bgm.mp4" type="video/mp4" />
+        </video>
+      </template>
     </div>
     <div
       id="myb"
       class="fixed flex justify-center items-center text-[#fff] text-4xl lg:text-8xl z-50 left-1/2 top-1/2 lg:top-[510px] -translate-x-1/2 -translate-y-1/2"
     ></div>
-
-    <div
-      class="relative flex items-center justify-center h-screen overflow-hidden"
-      id="bgc"
-    >
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="fixed z-10 w-full hidden min-[500px]:flex"
-      >
-        <source src="/bgc.mp4" type="video/mp4" />
-      </video>
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="fixed z-10 w-full min-[500px]:hidden"
-      >
-        <source src="/bgcm.mp4" type="video/mp4" />
-      </video>
-    </div>
     <div class="" id="test"></div>
   </div>
 </template>
@@ -60,7 +61,7 @@ export default {
   name: "home",
 };
 
-var countDownDate = new Date("Nov 21, 2022 15:20:00").getTime();
+var countDownDate = new Date("Nov 21, 2022 15:39:00").getTime();
 
 var ameibday = setInterval(function () {
   var now = new Date().getTime();
@@ -88,10 +89,7 @@ var ameibday = setInterval(function () {
     document.getElementById("test").innerHTML =
       "<div class='cake z-50 min-[500px]:hidden'><div class='plate'></div><div class='layer layer-bottom'></div><div class='layer layer-middle'></div><div class='layer layer-top'></div><div class='icing'></div><div class='drip drip1'></div><div class='drip drip2'></div><div class='drip drip3'></div><div class='candle'><div class='flame'></div></div></div>";
     document.getElementById("bg").style.display = "none";
-    document.getElementById("bgc").style.display = "";
-  } else {
-    document.getElementById("bg").style.display = "";
-    document.getElementById("bgc").style.display = "none";
+    document.getElementById("bgm").style.display = "none";
   }
 }, 1000);
 </script>
