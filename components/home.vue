@@ -61,7 +61,7 @@ export default {
   name: "home",
 };
 
-var countDownDate = new Date("Nov 21, 2022 15:54:00").getTime();
+var countDownDate = new Date("Nov 21, 2022 16:00:00").getTime();
 
 var ameibday = setInterval(function () {
   var now = new Date().getTime();
@@ -100,7 +100,7 @@ var ameibday = setInterval(function () {
 #myb {
   text-shadow: 0 0 1px 0px rgba(255, 210, 108, 1),
     0 0 5px 0px rgba(255, 210, 108, 1), 0 0 10px 0px rgba(255, 210, 108, 1),
-    0 0 15px 0px #000, 0 0 20px 0px #000;
+    0 0 15px 0px rgba(0, 0, 0, 1), 0 0 20px 0px rgba(0, 0, 0, 1);
   font-weight: bold;
 }
 
@@ -232,7 +232,7 @@ var ameibday = setInterval(function () {
 
 .flame {
   position: absolute;
-  background-color: orange;
+  background-color: #ffa500;
   width: 10px;
   height: 25px;
   border-radius: 10px 10px 10px 10px/25px 25px 10px 10px;
