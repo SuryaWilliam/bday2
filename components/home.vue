@@ -55,7 +55,7 @@
     <div class="" id="test"></div>
 
     <div
-      class="fixed text-[#ffffc6] z-50 left-1/2 -translate-x-1/2 bottom-[5%] flex justify-center items-center cursor-pointer md:hidden"
+      class="fixed text-[#ffffc6] z-50 left-1/2 -translate-x-1/2 bottom-[2%] flex justify-center items-center cursor-pointer md:hidden"
       id="playb"
     >
       <div class="mx-2 text-2xl font-bold">SONG</div>
