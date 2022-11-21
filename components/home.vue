@@ -98,8 +98,8 @@ var ameibday = setInterval(function () {
 
 <style>
 #myb {
-  text-shadow: 0 0 1px #ffd26c, 0 0 5px #ffd26c, 0 0 10px #ffd26c, 0 0 15px #000,
-    0 0 20px #000;
+  text-shadow: 0 0 1px rgb(255, 210, 108), 0 0 5px rgb(255, 210, 108),
+    0 0 10px rgb(255, 210, 108), 0 0 15px #000, 0 0 20px #000;
   font-weight: bold;
 }
 
