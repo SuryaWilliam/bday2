@@ -50,7 +50,7 @@
     </div>
     <div
       id="myb"
-      class="fixed flex justify-center items-center text-[#fff] text-4xl lg:text-8xl z-50 left-1/2 top-1/2 lg:top-[510px] -translate-x-1/2 -translate-y-1/2"
+      class="fixed flex justify-center items-center text-[#fff] text-4xl lg:text-8xl z-50 left-1/2 top-[45%] lg:top-[510px] -translate-x-1/2 -translate-y-1/2"
     ></div>
     <div class="" id="test"></div>
   </div>
@@ -61,7 +61,7 @@ export default {
   name: "home",
 };
 
-var countDownDate = new Date("Nov 21, 2022 15:39:00").getTime();
+var countDownDate = new Date("Nov 21, 2022 15:50:00").getTime();
 
 var ameibday = setInterval(function () {
   var now = new Date().getTime();
@@ -75,12 +75,14 @@ var ameibday = setInterval(function () {
 
   document.getElementById("myb").innerHTML =
     "<div class='flex justify-center items-center'><div class='mx-2 lg:mx-5 text-center lg:w-[120px]'><div>" +
+    days +
+    "</div><div class='text-base lg:text-4xl'>Hari</div></div><div class='mx-2 lg:mx-5 text-center lg:w-[120px]'><div>" +
     hours +
     "</div><div class='text-base lg:text-4xl'>Jam</div></div><div class='mx-2 lg:mx-5 text-center lg:w-[120px]'><div>" +
     minutes +
     "</div><div class='text-base lg:text-4xl'>Menit</div></div><div class='mx-2 lg:mx-5 text-center lg:w-[120px]'><div>" +
     seconds +
-    "</div><div class='text-base lg:text-4xl'>Detik</div></div> </div>";
+    "</div><div class='text-base lg:text-4xl'>Detik</div></div></div>";
 
   if (distance < 0) {
     clearInterval(ameibday);
