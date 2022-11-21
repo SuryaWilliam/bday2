@@ -50,7 +50,7 @@
     </div>
     <div
       id="myb"
-      class="fixed flex justify-center items-center text-[#fff] text-4xl lg:text-8xl z-50 left-1/2 top-1/2 lg:top-[510px] -translate-x-1/2 -translate-y-1/2"
+      class="fixed flex justify-center items-center text-[#ffffc6] text-4xl lg:text-8xl z-50 left-1/2 top-1/2 lg:top-[510px] -translate-x-1/2 -translate-y-1/2"
     ></div>
     <div class="" id="test"></div>
   </div>
@@ -61,7 +61,7 @@ export default {
   name: "home",
 };
 
-var countDownDate = new Date("Nov 21, 2022 16:13:00").getTime();
+var countDownDate = new Date("Nov 21, 2022 16:30:00").getTime();
 
 var ameibday = setInterval(function () {
   var now = new Date().getTime();
