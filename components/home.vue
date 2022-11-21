@@ -97,6 +97,12 @@ var ameibday = setInterval(function () {
 </script>
 
 <style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 210, 108, 1);
+  }
+}
+
 #myb {
   text-shadow: 0 0 1px rgba(255, 210, 108, 1), 0 0 5px rgba(255, 210, 108, 1),
     0 0 10px rgba(255, 210, 108, 1), 0 0 15px rgba(0, 0, 0, 1),
